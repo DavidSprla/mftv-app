@@ -15,7 +15,7 @@
 				"react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.development.js",
 				"react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.development.js",
 				"vue": "https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js",
-				"@DavidSprla/root-config": "https://mftv-root-config.vercel.app/DavidSprla-root-config.js",
+				"@DavidSprla/app": "https://mftv-app.vercel.app/DavidSprla-app.js",
 				"@DavidSprla/navbar": "https://mftv-navbar.vercel.app/DavidSprla-navbar.js",
 				"@DavidSprla/movies": "https://mftv-movies.vercel.app/js/app.a0a901a3.js",
 				"@DavidSprla/favourite": "https://mftv-favourite.vercel.app/js/app.5c7219d6.js",
@@ -25,14 +25,11 @@
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script" crossorigin=anonymous>
 
-  <!-- Add your organization's prod import map URL to this script's src  -->
-  <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
-
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@DavidSprla/root-config": "//localhost:9000/DavidSprla-root-config.js",
+        "@DavidSprla/app": "//localhost:9000/DavidSprla-app.js",
 				"@DavidSprla/navbar": "//localhost:9001/DavidSprla-navbar.js",
 				"@DavidSprla/movies": "//localhost:9002/js/app.js",
 				"@DavidSprla/favourite": "//localhost:9003/js/app.js",
@@ -72,7 +69,7 @@
 	<footer>
 		<div class="footer__container">
 			<div class="footer__links">
-				<a href="https://github.com/DavidSprla/mftv-root-config" target="_blank" class="footer__link">
+				<a href="https://github.com/DavidSprla/mftv-app" target="_blank" class="footer__link">
 					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 438.549 438.549">
 						<path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
 								c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
@@ -103,7 +100,7 @@
 		</div>
 	</footer>
   <script>
-    System.import('@DavidSprla/root-config');
+    System.import('@DavidSprla/app');
 		System.import('@DavidSprla/styleguide');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>

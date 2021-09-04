@@ -1,5 +1,5 @@
 {
-  "name": "@DavidSprla/root-config",
+  "name": "@DavidSprla/app",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js",

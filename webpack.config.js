@@ -6,7 +6,7 @@ module.exports = (webpackConfigEnv, argv) => {
   const orgName = "DavidSprla";
   const defaultConfig = singleSpaDefaults({
     orgName,
-    projectName: "root-config",
+    projectName: "app",
     webpackConfigEnv,
     argv,
     disableHtmlGeneration: true,
