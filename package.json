@@ -2,7 +2,6 @@
   "name": "@DavidSprla/app",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
-		"start:prod": "node server.js",
     "lint": "eslint src --ext js",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write .",
@@ -39,7 +38,6 @@
   "dependencies": {
     "@types/jest": "^26.0.23",
     "@types/systemjs": "^6.1.0",
-    "express": "^4.17.1",
     "single-spa": "^5.9.3"
   }
 }
