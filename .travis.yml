@@ -3,6 +3,7 @@ node_js:
   - node
 script:
   - npm run build
+  - echo "AWS COMMIT - $TRAVIS_COMMIT"
   - mkdir -p dist/@DavidSprla/app/$TRAVIS_COMMIT
   - mv dist/*.* dist/@DavidSprla/app/$TRAVIS_COMMIT/
 deploy:
